@@ -1,8 +1,8 @@
-export default function page() {
+export default function Impressum() {
   return (
     <div>
       <h1>Impressum</h1>
-      <p>Text Beispiel oderso</p>
+      <p></p>
     </div>
   );
 }

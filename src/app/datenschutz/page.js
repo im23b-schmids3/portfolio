@@ -1,8 +1,8 @@
-export default function page() {
+export default function Datenschutz() {
   return (
     <div>
       <h1>Datenschutz</h1>
-      <p>Text Beispiel oderso</p>
+      <p></p>
     </div>
   );
 }
