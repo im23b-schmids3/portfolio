@@ -19,10 +19,26 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body className="bg-[#121429] text-white flex flex-col min-h-screen">
+        {/* Header */}
+        <header className="flex items-center justify-between p-5 bg-[#1a1c3b] border-b border-gray-700 shadow-md">
+          <div className="text-lg font-semibold text-white">Meine Website</div>
+          <nav className="space-x-5 text-white">
+            <a href="/impressum/page.js" className="hover:text-black transition">Impressum</a>
+            <a href="/datenschutz/page.js" className="hover:text-black transition">Datenschutz</a>
+          </nav>
+        </header>
+
+        {/* Main Content */}
+        <main className="flex-grow p-5">{children}</main>
+
+        {/* Footer */}
+        <footer className="bg-[#1a1c3b] text-gray-400 text-center p-6 border-t border-gray-700 shadow-inner">
+          <nav className="space-x-5 mt-2">
+            <a href="/impressum/page.js" className="hover:text-gray-300 transition">Impressum</a>
+            <a href="/datenschutz/page.js" className="hover:text-gray-300 transition">Datenschutz</a>
+          </nav>
+        </footer>
       </body>
     </html>
   );
