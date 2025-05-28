@@ -19,13 +19,13 @@ export default function RootLayout({ children }) {
               
               <div className="flex space-x-8">
                 <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  Über mich
+                  About me
                 </Link>
                 <Link href="/projects" className="text-gray-300 hover:text-white transition-colors">
-                  Projekte
+                  Projects
                 </Link>
                 <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Kontakt
+                  Contact
                 </Link>
               </div>
             </div>
@@ -36,7 +36,7 @@ export default function RootLayout({ children }) {
         
         <footer className="bg-gray-900 border-t border-gray-800 py-8">
           <div className="container mx-auto px-4 text-center text-gray-400">
-            <p>© 2024 Sandro Schmid. Alle Rechte vorbehalten.</p>
+            <p>© 2025 Sandro Schmid. All rights reserved.</p>
           </div>
         </footer>
       </body>
