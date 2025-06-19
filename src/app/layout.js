@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
                 <Link href="/" className="text-gray-300 hover:text-white transition-colors">
                   About me
                 </Link>
+                <Link href="/skills" className="text-gray-300 hover:text-white transition-colors">
+                  Skills
+                </Link>
                 <Link href="/projects" className="text-gray-300 hover:text-white transition-colors">
                   Projects
                 </Link>

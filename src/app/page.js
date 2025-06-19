@@ -2,49 +2,24 @@ import Link from 'next/link';
 
 export default function Home() {
     return (
-        <main className="min-h-screen bg-black text-white">
-            <div className="container mx-auto px-4 py-16">
-                <div className="max-w-3xl mx-auto">
-                    <h1 className="text-5xl font-bold mb-8">Welcome to my Portfolio-Site</h1>
-
-                    <div className="space-y-6">
-                        <p className="text-xl">
-                            Hello! I’m Sandro Schmid, a 17-year-old Student at Kantonsschule Hottingen.
-                        </p>
-
-                        <div className="bg-gray-900 p-6 rounded-lg">
-                            <h2 className="text-2xl font-semibold mb-4">About me</h2>
-                            <p className="text-gray-300">
-                                I’m a passionate developer with a focus on creating practical and efficient
-                                solutions through code. I enjoy working on diverse projects, from chat applications in
-                                Java to automation tools in Python. My strengths lie in problem-solving, learning new
-                                technologies quickly, and building projects that bridge creativity with functionality.
-                                I’m always looking to grow as a developer and collaborate on meaningful work.
-                            </p>
-                        </div>
-
-                        <div className="bg-gray-900 p-6 rounded-lg">
-                            <h2 className="text-2xl font-semibold mb-4">My Skills</h2>
-                            <ul className="list-disc list-inside text-gray-300 space-y-2">
-                                <li>Next.js & React</li>
-                                <li>Tailwind CSS</li>
-                                <li>JavaScript</li>
-                                <li>Python</li>
-
-                            </ul>
-                        </div>
-
-                        <div className="flex gap-4 mt-8">
-                            <Link href="/projects"
-                                  className="bg-white text-black px-6 py-3 rounded-lg font-semibold hover:bg-gray-200 transition-colors">
-                                My Projects
-                            </Link>
-                            <Link href="/contact"
-                                  className="border border-white px-6 py-3 rounded-lg font-semibold hover:bg-white hover:text-black transition-colors">
-                                Contact
-                            </Link>
-                        </div>
-                    </div>
+        <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-950 text-white flex items-center justify-center">
+            <div className="w-full max-w-2xl mx-auto px-6 py-20">
+                <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-center tracking-tight">
+                    Hello! I'm Sandro Schmid
+                </h1>
+                <p className="text-lg md:text-xl text-gray-300 text-center mb-10 leading-relaxed">
+                     I am a 17 years old student at Kantonsschule Hottingen, passionate about coding to solve complex problems.<br/>
+                    I am currently working on a Java project, which is a chat application.
+                </p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center mt-8">
+                    <Link href="/projects"
+                          className="px-8 py-3 rounded-full font-semibold bg-gradient-to-r from-blue-500 to-cyan-400 text-white shadow-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 text-center">
+                        My Projects
+                    </Link>
+                    <Link href="/contact"
+                          className="px-8 py-3 rounded-full font-semibold border border-gray-400 text-gray-200 hover:bg-gray-800 hover:text-white transition-all duration-200 text-center">
+                        Contact
+                    </Link>
                 </div>
             </div>
         </main>
