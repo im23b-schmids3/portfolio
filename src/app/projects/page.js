@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function Projects() {
     const projects = [
         {
@@ -31,9 +33,11 @@ export default function Projects() {
                     {projects.map((project, index) => (
                         <div key={index} className="bg-black/70 border border-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition-transform duration-200 flex flex-col">
                             <div className="h-48 bg-gray-800 relative">
-                                <img 
+                                <Image 
                                     src={project.image} 
                                     alt={`${project.title} Screenshot`}
+                                    width={400}
+                                    height={192}
                                     className="w-full h-full object-cover rounded-t-2xl"
                                 />
                             </div>

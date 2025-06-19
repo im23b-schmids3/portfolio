@@ -5,7 +5,7 @@ export default function Home() {
         <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-950 text-white flex items-center justify-center">
             <div className="w-full max-w-2xl mx-auto px-6 py-20">
                 <h1 className="text-5xl md:text-6xl font-extrabold mb-6 text-center tracking-tight">
-                    Hello! I'm Sandro Schmid
+                    Hello! I&apos;m Sandro Schmid
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 text-center mb-10 leading-relaxed">
                      I am a 17 years old student at Kantonsschule Hottingen, passionate about coding to solve complex problems.<br/>
