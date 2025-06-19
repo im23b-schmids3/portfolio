@@ -1,5 +1,10 @@
 'use client';
 import { useState } from 'react';
+import emailjs from '@emailjs/browser';
+
+const SERVICE_ID = 'service_vr6d0lz';
+const TEMPLATE_ID = 'template_a5c8krn';
+const PUBLIC_KEY = 'kOwVP1zSHTeJ1eLsP';
 
 export default function Contact() {
   const [formData, setFormData] = useState({
@@ -7,10 +12,32 @@ export default function Contact() {
     email: '',
     message: ''
   });
+  const [status, setStatus] = useState(null);
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    console.log('Form submitted:', formData);
+    setLoading(true);
+    setStatus(null);
+    try {
+      const result = await emailjs.send(
+        SERVICE_ID,
+        TEMPLATE_ID,
+        {
+          user_name: formData.name,
+          user_email: formData.email,
+          message: formData.message,
+        },
+        PUBLIC_KEY
+      );
+      setStatus('success');
+      setFormData({ name: '', email: '', message: '' });
+    } catch (error) {
+      console.error(error);
+      setStatus('error');
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -64,10 +91,17 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-3 px-6 rounded-full font-semibold shadow-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200"
+              className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-3 px-6 rounded-full font-semibold shadow-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 disabled:opacity-60"
+              disabled={loading}
             >
-              Send Message
+              {loading ? 'Sending...' : 'Send Message'}
             </button>
+            {status === 'success' && (
+              <p className="text-green-400 text-center mt-2">Message sent successfully!</p>
+            )}
+            {status === 'error' && (
+              <p className="text-red-400 text-center mt-2">Something went wrong. Please try again.</p>
+            )}
           </form>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
