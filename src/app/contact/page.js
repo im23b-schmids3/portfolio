@@ -49,7 +49,7 @@ export default function Contact() {
 
   return (
     <main className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-gray-950 text-white flex items-center justify-center py-20">
-      <div className="w-full max-w-2xl mx-auto px-6 py-16 rounded-2xl shadow-xl bg-black/70 backdrop-blur-md border border-gray-800">
+      <div className="w-full max-w-3xl mx-auto px-6 py-16 rounded-2xl shadow-xl bg-black/70 backdrop-blur-md border border-gray-800">
         <h1 className="text-5xl md:text-6xl font-extrabold mb-8 text-center tracking-tight">Contact</h1>
         <div className="bg-gray-900/80 rounded-xl p-8 mb-8">
           <form onSubmit={handleSubmit} className="space-y-6">
