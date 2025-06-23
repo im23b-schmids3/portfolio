@@ -77,7 +77,7 @@ export default function Skills() {
             <button
               key={cat.key}
               onClick={() => setSelected(cat.key)}
-              className={`px-5 py-2 rounded-full font-semibold border transition-all duration-200 text-sm md:text-base ${selected === cat.key ? 'bg-gradient-to-r from-blue-500 to-cyan-400 text-white border-blue-400 shadow-lg' : 'bg-gray-900/80 text-gray-300 border-gray-700 hover:bg-gray-800 hover:text-white'}`}
+              className={`px-5 py-2 rounded-full font-semibold border transition-all duration-200 text-sm md:text-base cursor-pointer ${selected === cat.key ? 'bg-gradient-to-r from-blue-500 to-cyan-400 text-white border-blue-400 shadow-lg' : 'bg-gray-900/80 text-gray-300 border-gray-700 hover:bg-gray-800 hover:text-white'}`}
             >
               {cat.label}
             </button>
