@@ -5,7 +5,7 @@ export default function Projects() {
         {
             title: "Real-time Chat App",
             description: "A simple real-time chat application built with Java. It supports multiple clients through socket programming",
-            technologies: ["Java", "Spring Boot", "React"],
+            technologies: ["Java", "Spring Boot", "React", "MySQL"],
             image: "/images/chat-app.png",
             githubLink: "https://github.com/im23b-schmids3/real-time-chat-app"
         },
@@ -15,6 +15,13 @@ export default function Projects() {
             technologies: ["Python", "OpenAI API", "Space OCR"],
             image: "/images/Kahoot-Cheat.png",
             githubLink: "https://github.com/im23b-schmids3/Win-every-Kahoot"
+        },
+        {
+            title: "Mensa App",
+            description: "A web app built for a school project. A simple Mensa-App which allows users to view the daily menu of their school canteen and pre-order it.",
+            technologies: ["Next.js", "Tailwind CSS", "MySQL"],
+            image: "/images/Mensa-App.png",
+            githubLink: "https://github.com/im23b-schmids3/Mensa-App"
         },
         {
             title: "CryptoVerse",
