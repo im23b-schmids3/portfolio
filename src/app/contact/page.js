@@ -91,10 +91,12 @@ export default function Contact() {
             </div>
             <button
               type="submit"
-              className="w-full bg-gradient-to-r from-blue-500 to-cyan-400 text-white py-3 px-6 rounded-full font-semibold shadow-lg hover:from-cyan-400 hover:to-blue-500 transition-all duration-200 disabled:opacity-60 cursor-pointer"
+              className="w-full relative group px-6 py-3 rounded-full font-semibold text-white overflow-hidden shadow-lg disabled:opacity-60 cursor-pointer"
               disabled={loading}
             >
-              {loading ? 'Sending...' : 'Send Message'}
+              <span className="absolute inset-0 bg-gradient-to-r from-blue-500 to-cyan-400 transition-opacity duration-300 group-hover:opacity-0" />
+              <span className="absolute inset-0 bg-gradient-to-r from-cyan-400 to-blue-500 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+              <span className="relative z-10">{loading ? 'Sending...' : 'Send Message'}</span>
             </button>
             {status === 'success' && (
               <p className="text-green-400 text-center mt-2">Message sent successfully!</p>
