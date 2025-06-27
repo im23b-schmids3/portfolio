@@ -2,13 +2,16 @@ import './globals.css'
 import Link from 'next/link'
 
 export const metadata = {
-  title: 'Mein Portfolio',
+  title: 'Sandro Schmid - Portfolio',
   description: 'Portfolio von Sandro Schmid',
 }
 
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
+      <head>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
+      </head>
       <body>
         <nav className="bg-gray-900 border-b border-gray-800">
           <div className="container mx-auto px-4">
