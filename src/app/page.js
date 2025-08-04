@@ -9,7 +9,7 @@ export default function Home() {
                     Hello! I&apos;m Sandro Schmid
                 </h1>
                 <p className="text-lg md:text-xl text-gray-300 text-center mb-10 leading-relaxed">
-                    I am a 17 years old student at Kantonsschule Hottingen, passionate about coding to solve complex
+                    I am a 18 years old student at Kantonsschule Hottingen, passionate about coding to solve complex
                     problems.<br/>
                     I am currently working on a Java project, which is a chat application.
                 </p>
