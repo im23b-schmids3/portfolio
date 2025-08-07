@@ -1,5 +1,5 @@
-import './globals.css'
 import Link from 'next/link'
+import './globals.css'
 
 export const metadata = {
   title: 'Sandro Schmid - Portfolio',
@@ -9,11 +9,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="de">
-      <head>
-        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-      </head>
-      <body>
-        <nav className="bg-gray-900 border-b border-gray-800">
+    <head>
+      <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
+    </head>
+    <body>
+    <nav className="bg-gray-900 border-b border-gray-800">
           <div className="container mx-auto px-4">
             <div className="flex items-center justify-between h-16">
               <Link href="/" className="text-white font-bold text-xl">

@@ -23,7 +23,12 @@ const SKILLS = [
   {
     name: 'Tailwind CSS',
     category: 'frameworks',
-    logo: '/images/tailwindcss.png',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-original.svg',
+  },
+    {
+    name: 'Flask',
+    category: 'frameworks',
+    logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg',
   },
   // Backend (sortiert)
   {
