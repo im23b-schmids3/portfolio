@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import './globals.css'
+import Navigation from '../components/Navigation'
 
 export const metadata = {
   title: 'Sandro Schmid - Portfolio',
@@ -13,30 +13,7 @@ export default function RootLayout({ children }) {
       <link rel="icon" href="/favicon.ico" type="image/x-icon"/>
     </head>
     <body>
-    <nav className="bg-gray-900 border-b border-gray-800">
-          <div className="container mx-auto px-4">
-            <div className="flex items-center justify-between h-16">
-              <Link href="/" className="text-white font-bold text-xl">
-                Sandro Schmid
-              </Link>
-              
-              <div className="flex space-x-8">
-                <Link href="/" className="text-gray-300 hover:text-white transition-colors">
-                  About me
-                </Link>
-                <Link href="/skills" className="text-gray-300 hover:text-white transition-colors">
-                  Skills
-                </Link>
-                <Link href="/projects" className="text-gray-300 hover:text-white transition-colors">
-                  Projects
-                </Link>
-                <Link href="/contact" className="text-gray-300 hover:text-white transition-colors">
-                  Contact
-                </Link>
-              </div>
-            </div>
-          </div>
-        </nav>
+        <Navigation />
         
         {children}
         
