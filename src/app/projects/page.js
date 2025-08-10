@@ -24,6 +24,13 @@ export default function Projects() {
             githubLink: "https://github.com/im23b-schmids3/Mensa-App"
         },
         {
+            title: "Discord bot",
+            description: "A simple Discord bot that responds to a few basic commands and can play music from YouTube in voice channels",
+            technologies: ["Python", "discord.py", "yt-dlp"],
+            image: "/images/Discord-Bot.png",
+            githubLink: "https://github.com/im23b-schmids3/Discord-bot"
+        },
+        {
             title: "CryptoVerse",
             description: "A web app built for a school project that tracks live cryptocurrency prices and features an integrated AI chatbot for user interaction.",
             technologies: ["HTML / CSS", "JavaScript", "CoinGecko API"],
