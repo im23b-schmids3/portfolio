@@ -17,6 +17,13 @@ export default function Projects() {
             githubLink: "https://github.com/im23b-schmids3/Win-every-Kahoot"
         },
         {
+            title: "Discord bot",
+            description: "A simple Discord bot that responds to a few basic commands and can play music from YouTube in voice channels",
+            technologies: ["Python", "discord.py", "yt-dlp"],
+            image: "/images/Discord-Bot.png",
+            githubLink: "https://github.com/im23b-schmids3/Discord-bot"
+        },
+        {
             title: "Mensa App",
             description: "A web app built for a school project. A simple Mensa-App which allows users to view the daily menu of their school canteen and pre-order it.",
             technologies: ["Next.js", "Tailwind CSS", "MySQL"],
@@ -24,11 +31,11 @@ export default function Projects() {
             githubLink: "https://github.com/im23b-schmids3/Mensa-App"
         },
         {
-            title: "Discord bot",
-            description: "A simple Discord bot that responds to a few basic commands and can play music from YouTube in voice channels",
-            technologies: ["Python", "discord.py", "yt-dlp"],
-            image: "/images/Discord-Bot.png",
-            githubLink: "https://github.com/im23b-schmids3/Discord-bot"
+            title: "Duellingo",
+            description: "This is a project my team and I created for the very first KSH Hackathon. It's a game where you can duel a friend in vocabulary to make learning more fun.",
+            technologies: ["JavaScript", "React", "Tailwind CSS"],
+            image: "/images/Duellingo.png",
+            githubLink: "https://github.com/im23b-schmids3/duellingo",
         },
         {
             title: "CryptoVerse",
@@ -47,13 +54,12 @@ export default function Projects() {
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {projects.map((project, index) => (
                         <div key={index} className="bg-black/70 border border-gray-800 rounded-2xl shadow-xl overflow-hidden hover:scale-[1.03] transition-transform duration-200 flex flex-col">
-                            <div className="h-48 bg-gray-800 relative">
-                                <Image 
-                                    src={project.image} 
+                            <div className="aspect-video bg-black relative rounded-t-2xl overflow-hidden">
+                                <Image
+                                    src={project.image}
                                     alt={`${project.title} Screenshot`}
-                                    width={400}
-                                    height={192}
-                                    className="w-full h-full object-cover rounded-t-2xl"
+                                    fill
+                                    className="object-cover"
                                 />
                             </div>
                             <div className="p-6 flex flex-col flex-1">
