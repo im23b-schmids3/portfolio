@@ -17,3 +17,27 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.char {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(0.5em) scale(0.95);
+  animation: letter-pop 0.4s ease forwards;
+  will-change: transform, opacity;
+  transform: translateZ(0);
+}
+
+@keyframes letter-pop {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .char {
+    animation: none;
+    opacity: 1;
+    transform: none;
+  }
+}
