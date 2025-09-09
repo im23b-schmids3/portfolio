@@ -128,6 +128,17 @@ export default function Contact() {
                 </svg>
                 GitHub
               </a>
+              <a 
+                href="https://www.linkedin.com/in/sandro-schmid-a16292382/" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 justify-center hover:text-white transition-colors cursor-pointer"
+              >
+                <svg className="w-6 h-6" viewBox="0 0 24 24" fill="currentColor">
+                  <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.27c-.96 0-1.73-.78-1.73-1.73s.78-1.73 1.73-1.73 1.73.78 1.73 1.73-.77 1.73-1.73 1.73zm13.5 11.27h-3v-5.6c0-1.34-.03-3.06-1.87-3.06-1.87 0-2.16 1.46-2.16 2.97v5.69h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z" />
+                </svg>
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>
